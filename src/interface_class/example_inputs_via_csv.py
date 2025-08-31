@@ -13,7 +13,8 @@ def calculator(num1, operation, num2):
             raise gr.Error("Cannot divide by zero!")
         return num1 / num2
 
-example_dir = "example_data/calculator" # Must contain log.csv
+
+example_dir = "example_data/calculator"  # Must contain log.csv
 demo = gr.Interface(
     calculator,
     [
